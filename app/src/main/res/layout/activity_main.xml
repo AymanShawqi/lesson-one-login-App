@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gameschoolcode.passwordproject.MainActivity"
+    android:orientation="vertical"
+    android:background="#85d18a"
+    android:paddingTop="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="40dp">
+    <!--First inner Linear Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/vMargin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#FFF"
+            android:hint="Enter your name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/userNameId"
+            />
+
+    </LinearLayout>
+
+    <!--Second inner Linear Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/vMargin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:background="#FFF"
+            android:hint="Enter Your Password"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/passwordId"/>
+
+    </LinearLayout>
+    <!--Third inner Linear Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/vMargin"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:id="@+id/sendId"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:id="@+id/resetId"/>
+    </LinearLayout>
+
+    <!--Fourth inner Linear Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/vMargin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Information :"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:id="@+id/informationId"/>
+
+    </LinearLayout>
+
+</LinearLayout>
